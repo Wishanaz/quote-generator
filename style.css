@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+
+body{
+    background-color: rgb(21, 32, 32);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.quote-container{
+    position: relative;
+    max-width: 500px;
+    /* height: 40%; */
+    position: relative;
+    background-color: #37775b;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(172, 251, 226, 0.5);
+    animation: fadeIn 1s ease;
+}
+
+.quote-text {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    color: #FCF8F3;
+}
+
+.quote-author{
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #F5ECD5;
+}
+.quote-text, .quote-author {
+    transition: opacity 0.5s ease;
+}
+.fade-out {
+    opacity: 0;
+}
+.fade-in {
+    opacity: 1;
+}
+.quote-button{
+    background-color: #265d48;
+    color: #d2dfb2;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.quote-button:hover {
+    background-color: #4c8d74;
+    color: #c9de8f;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
